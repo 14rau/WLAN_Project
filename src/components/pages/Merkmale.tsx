@@ -5,7 +5,7 @@ export class Merkmale extends React.Component{
     public render() {
         return(
             <Card title="Welcome">
-                Welcome on our Startpage
+                Welcome on our Startpage3
             </Card>
         );
     }

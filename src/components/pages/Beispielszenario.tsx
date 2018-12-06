@@ -5,7 +5,7 @@ export class Beispielszenario extends React.Component{
     public render() {
         return(
             <Card title="Welcome">
-                Welcome on our Startpage
+                Welcome on our Startpage5
             </Card>
         );
     }

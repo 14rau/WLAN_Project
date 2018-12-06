@@ -5,7 +5,7 @@ export class Konfiguration extends React.Component{
     public render() {
         return(
             <Card title="Welcome">
-                Welcome on our Startpage
+                Welcome on our Startpage2
             </Card>
         );
     }
