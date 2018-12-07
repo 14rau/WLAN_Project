@@ -1,8 +1,12 @@
-import { observable, action } from "mobx";
+import { observable, action, toJS } from "mobx";
 import * as React from "react";
 import { DefinitionTable } from "./components/pages/Definitions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { Pages } from './App';
+import { faClock, faCheckCircle } from '@fortawesome/free-regular-svg-icons';
+
+
 
 export class AppState{
     @observable public todoState;
@@ -16,22 +20,12 @@ export class AppState{
     @observable currentPageId: number = 0;
 
     constructor() {
+        this.loadPagestate()
         this.dict = new Map();
-        if(localStorage.getItem("TD")) {
-            this.todoState = JSON.parse(localStorage.getItem("TD"));
-        } else {
-            let temp = [false, false, false, false, false];
-            localStorage.setItem("TD", JSON.stringify(temp));
-        }
     }
 
     public setDeftable(table: DefinitionTable) {
         this.defTable = table;
-    }
-
-    @action
-    public onChangeTodo(id: number, value: boolean) {
-        this.todoState[id] = value;
     }
 
     @action
@@ -46,7 +40,7 @@ export class AppState{
 
     @action
     public setCurrentPage(name: string, id: number) {
-        if(id !== 0) this.onChangeTodo(this.currentPageId - 1, true);
+
         this.currentPageName = name;
         this.currentPageId = id;
     }
@@ -65,5 +59,47 @@ export class AppState{
             `${name}_tr_def${id}`
         );
 
+    }
+
+    @action
+    public loadPagestate() {
+        if(localStorage.getItem("TODO")) {
+            this.todoState = JSON.parse(localStorage.getItem("TODO"));
+        } else {
+            this.todoState = {
+                [Pages.Merkmal]: [
+                    false,
+                    false
+                ], 
+                [Pages.Grenzen]: [
+                    false,
+                    false,
+                    false
+                ],
+                [Pages.Konfiguration]: [
+                    false,
+                    false,
+                    false
+                ],
+                [Pages.Beispielszenario]: [
+                    false,
+                    false,
+                    false
+                ]
+            }
+            localStorage.setItem("TODO", JSON.stringify(this.todoState));
+        }
+    }
+
+    public validatePagestate(page: Pages) {
+        console.log(page, toJS(this.todoState));
+        if(this.todoState[page].includes(false) && this.todoState[page].includes(true)) return <FontAwesomeIcon icon={faClock} color="tomato"/>
+        if(!this.todoState[page].includes(false)) return <FontAwesomeIcon icon={faCheckCircle} color="green"/>
+        if(!this.todoState[page].includes(true)) return <></>;
+    }
+
+    public toggleValidation(page: Pages, articleNr: number) {
+        this.todoState[page][articleNr] = !this.todoState[page][articleNr];
+        localStorage.setItem("TODO", JSON.stringify(this.todoState));
     }
 }
