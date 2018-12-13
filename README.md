@@ -4,21 +4,23 @@ Page: https://14rau.github.io/WLAN_Project/
 Format that will be safed in localStorage:  
 ```
 {
-  "page_1": {
-    "article_1": true,
-    "article_2": true,
-    "article_3": false
-  },
-  "page_2": {
-    "article_1": true,
-    "article_2": true,
-    "article_3": false
-  },
-  "page_3": {
-    "article_1": true,
-    "article_2": true,
-    "article_3": false
-  }
+  "1":[
+    false,
+    false
+    ]
+  ,"2":[
+    false
+   ],
+   "3":[
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "4":[
+    false
+    ]
 }
 ```
 
