@@ -3,6 +3,7 @@ import { Grid, Row, Col } from "react-bootstrap";
 import { Article } from '../Article';
 import { Pages } from '../../App';
 import { Abbildung } from '../Abbildung';
+import { Definition } from './Definitions';
 
 export class Beispielszenario extends React.Component{
     public render() {
@@ -25,10 +26,9 @@ export class Beispielszenario extends React.Component{
                             </p>
                             <h5>Benötigte Hardware</h5>
                             <p>
-                            Die Provider, in der Regel, liefern die wichtigste Hardware wie 
-                            Splitter, DSL-Modem oder NTBA kostenlos. Dabei muss man beachten, dass, um WLAN benutzen zu können, braucht man unbedingt einen Router, für den dann zusätzliche Kosten anfallen könnten.
+                            Die Provider, in der Regel, liefern die wichtigste Hardware wie&nbsp;<Definition defi="Splitter">Splitter</Definition>, <Definition defi="DSL-Modem">DSL-Modem</Definition> oder <Definition defi="NTBA">NTBA</Definition> kostenlos. Dabei muss man beachten, dass, um WLAN benutzen zu können, braucht man unbedingt einen Router, für den dann zusätzliche Kosten anfallen könnten.
                             Zudem muss jedes Gerät das WLAN-Signal empfangen können mit Hilfe einer Netzwerkkarte. Auf mobilen Geräten ist so eine Netzwerkkarte schon standardmäßig vorhanden, aber für die Rechner müsste man eventuell eine PCI-Karte besorgen, um sich mit WLAN verbinden zu können. Bei den Notebooks und einigen Mini-PCs oder Barebones besteht die Möglichkeit eine PCMCIA-Karte einzubauen, wenn diese noch nicht vorhanden war.
-                            In manchen Fällen ist es empfehlenswert einen USB-Adapter, da dieser universell einsetzbar ist. Es gilt allerdings zu beachten, dass der Rechner eine USB-2.0-Schnittstelle benötigt.
+                            In manchen Fällen ist es empfehlenswert einen USB-Adapter einzusetzen, da dieser universell einsetzbar ist. Es gilt allerdings zu beachten, dass der Rechner eine USB-2.0-Schnittstelle benötigt.
                             </p>
                             <h5>Standort</h5>
                             <p>

@@ -22,7 +22,7 @@ export class Home extends React.Component<IHomeProps>{
                         <Col xs={12}>
                             <div className="customCard">
                                 <h3>Hallo</h3>
-                                Auf dieser Webseite kannst du deinen Lese Status tracken. Hast du einen Artikel gelesen, kannst du oben links auf den Hacken klicken und der Artikel wird als gelesen markiert. Hast du alle Artikel gelesen, erscheint ein grüner Hacken in der Sidebar der aussagt, dass du die gesammte Seite gelesen hast. Damit hast du deinen eigenen Fortschritt auf dieser Seite immer im Blick.
+                                Auf dieser Webseite kannst du deinen Lese Status tracken. Hast du einen Artikel gelesen, kannst du oben rechts auf den Hacken klicken und der Artikel wird als gelesen markiert. Hast du alle Artikel gelesen, erscheint ein grüner Hacken in der Sidebar der aussagt, dass du die gesammte Seite gelesen hast. Damit hast du deinen eigenen Fortschritt auf dieser Seite immer im Blick.
                             </div>
                         </Col>
                     </Row>

@@ -117,7 +117,7 @@ export class Merkmale extends React.Component{
                                 <li>Wireless Distribution System</li>
                             </ul>
                             <p>
-                                <i>Independent WLAN</i> arbeiten im Peer-to-Peer-Betrieb. Jeder Rechner ist mit einer WLAN-Karte ist in diesem Netzwerk gleichberechtigt und hat die Möglichkeit, Daten zu den jeweils anderen Rechnern zu senden. Ein einzelner Rechner kann WLAN-Verbindungen zu den Partnern herstellen, die in Funkreichweite sind.
+                                <i>Independent WLAN</i> arbeitet im Peer-to-Peer-Betrieb. Jeder Rechner ist mit einer WLAN-Karte in diesem Netzwerk gleichberechtigt und hat die Möglichkeit, Daten zu den jeweils anderen Rechnern zu senden. Ein einzelner Rechner kann WLAN-Verbindungen zu den Partnern herstellen, die in Funkreichweite sind.
                             </p>
                             <p>
                                 <b>Vorteil</b>: Wenig bis keine Konfiguration benötigt.
@@ -169,7 +169,7 @@ export class Merkmale extends React.Component{
                             </dl>
                             <h5>Wellenlänge eines Signals</h5>
                             <p>Die Wellenlänge <i>λ</i> und die Frequenz <i>F</i> hängen unmittelbar zusammen.
-                            <i>λ</i> ergibt sich aus der Ausbreitungsgeschwindigkeit durch <i>F</i>. Sie liegt in Abhängigkeit zu der relativen Dielektrizitätskonstante <i>ε</i>. <i>λ</i> ist in einem Kabel kürzer als in der Luft oder im Vakuum (<Definition defi="Lichtgeschwindigkeit" >c</Definition>).</p>
+                            <i>λ</i> ergibt sich aus der Ausbreitungsgeschwindigkeit durch <i>F</i>. Sie liegt in Abhängigkeit zu der relativen Dielektrizitätskonstante <i>ε</i>.&nbsp;<i>λ</i> ist in einem Kabel kürzer als in der Luft oder im Vakuum (<Definition defi="Lichtgeschwindigkeit" >c</Definition>).</p>
 
                             <p>Je höher <i>F</i>, desto kürzer <i>λ</i></p>
                             <p>Je länger <i>F</i>, desto niedriger <i>λ</i></p>

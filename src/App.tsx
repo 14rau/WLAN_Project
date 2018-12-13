@@ -73,7 +73,7 @@ class App extends React.Component{
                             <Tabs.Expander />
                         </Tabs>
                         
-                        <div style={{background: "rgba(138, 155, 168, 0.15)", overflow: "auto", height: "100%", width: "100%"}}>
+                        <div style={{background: "rgba(138, 155, 168, 0.15)", overflowY: "auto", overflowX: "hidden", height: "100%", width: "100%"}}>
                             <Provider appState={this.appState}>
                                 {page}
                             </Provider>

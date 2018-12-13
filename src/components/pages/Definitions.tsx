@@ -35,7 +35,7 @@ export class DefinitionTable extends React.Component<IDefinitionTableProps>{
             <div style={{
                 position: "absolute",
                 width: "600px",
-                height: "50%",
+                height: "500px",
                 right: 1,
                 background: "white",
                 border: "1px solid #ddd",
