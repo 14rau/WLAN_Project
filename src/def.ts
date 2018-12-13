@@ -1,55 +1,17 @@
 export const definitions = [
     {
-        name: "Test1",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test2",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test3",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test4",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test5",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test6",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test7",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test8",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Test9",
-        definition: "Just an hello world definitions"
-    },
-    {
-        name: "Standarts Kürzel",
-        definition: `a: Nutzung des 5GHz Frequenzbandes
-        b: Verbesserung der Datentransferrate
-        g: nutzt das OFDM-Verfahren
-        n: Dualband-Standard (nutzt 2,4GHz und 5GHz)
-        ac: 5 GHz-Standard mit zwei Stufen: Wave 1 und Wave 2
-        ad: 60-GHz-Standard mit einer dadurch geringen Reichweite
-        ah: spezielle Anwendungen mit geringen Datentransferraten
-        ay: Spezifizierung des IEEE 802.11ad Standards`,
+        name: "IEEE 802.11ay",
+        definition: "Ist die Spezifizierung des IEEE 802.11ad Standards. Er bringt die MIMO-Antennen-Technik mit 4 Datenströmen (Spatial Streams) und die Bündelung auf maximale Kanalbreiten von 8640 MHz. Damit erhält man Geschwindigkeiten von bis zu 176 GBit/s. Hierfür wird auch präzises Beamforming verwendet, was höhere Modulationsstufen erlaubt. Richtfunk auf kurze Distanz mit sehr hohen Datenraten ist hiermit möglich.",
         url: "https://www.welotec.com/de/wlan-standards-vergleich"
     },
     {
-        name: "QAM",
-        definition: "Die Quadratur-Amplituden-Modulation (QAM), ist ein Modulationsverfahren in der elektronischen Nachrichtentechnik, das die Amplitudenmodulation und Phasenmodulation kombiniert.",
-        url: "https://de.wikipedia.org/wiki/Quadraturamplitudenmodulation"
+        name: "Lichtgeschwindigkeit",
+        definition: "Die Lichtgeschwindigkeit beträgt 299.792.458 m/s",
+        url: "https://de.wikipedia.org/wiki/Lichtgeschwindigkeit"
+    },
+    {
+        name: "OFDM",
+        definition: "OFDM ist ein Vielträgerverfahren, in dem es den Datenstrom innerhalb des verfügbaren Frequenzbereichs auf eine Vielzahl von schmalen Frequenzträgern aufteilt. Dazu wird der serielle Datenstrom in mehrere parallele Datenströme aufgeteilt. Die einzelnen Datenströme werden den einzelnen Frequenzträgern zugeteilt. Die einzelnen Frequenzträger werden wiederum auf herkömmliche Weise moduliert.",
+        url: "https://www.elektronik-kompendium.de/sites/kom/1509011.htm"
     },
 ]

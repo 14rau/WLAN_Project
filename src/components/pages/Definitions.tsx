@@ -73,7 +73,7 @@ interface IDefinitionProps{
 export class Definition extends React.Component<IDefinitionProps>{
     public render() {
         return <a onClick={this.onClick}>
-            {this.props.children}
+            <i>{this.props.children}</i>
         </a>
     }
 

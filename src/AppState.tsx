@@ -72,18 +72,16 @@ export class AppState{
                     false
                 ], 
                 [Pages.Grenzen]: [
-                    false,
-                    false,
                     false
                 ],
                 [Pages.Konfiguration]: [
                     false,
                     false,
+                    false,
+                    false,
                     false
                 ],
                 [Pages.Beispielszenario]: [
-                    false,
-                    false,
                     false
                 ]
             }

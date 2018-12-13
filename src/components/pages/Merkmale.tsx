@@ -5,6 +5,7 @@ import { TimelineEvent, Timeline } from '../ext';
 import { Row, Col, Grid } from "react-bootstrap"
 import { Article } from '../Article';
 import { Pages } from '../../App';
+import { Definition } from './Definitions';
 
 const timeline = [{
     name: "IEEE 802.11",
@@ -27,21 +28,9 @@ const timeline = [{
     year: "2012",
     text: "Freq: 60 GHz, max Datenrate: 4,8 GBit/s"
 },{
-    name: "IEEE 802.11ac Wave 1",
-    year: "2013",
-    text: "???"
-}, {
-    name: "IEEE 802.11ac Wave 2",
-    year: "2015",
-    text: "Freq: 2,4 GHz, max Datenrate: 2 MBit/s"
-}, {
-    name: "IEEE 802.11ah sub-1 GHz",
-    year: "2016",
-    text: "Freq: 2,4 GHz, max Datenrate: 2 MBit/s"
-},{
-    name: "IEEE 802.11ay",
+    name: <Definition defi="IEEE 802.11ay">IEEE 802.11ay</Definition>,
     year: "2018",
-    text: "Freq: 60 GHz, max Datenrate: 176 GBit/s"
+    text: "Freq: 60 GHz, max Datenrate: 20 GBit/s"
 },];
 /*
 1997 : IEEE 802.11
@@ -150,7 +139,7 @@ export class Merkmale extends React.Component{
                 </Row>
                 <Row>
                     <Col xs={6}>
-                        Content ICON
+                        
                     </Col>
                     <Col xs={6}>
                         <Article articleNr={1} page={Pages.Merkmal} style={{fontSize: "14px", marginTop: "8px"}}>
@@ -180,13 +169,13 @@ export class Merkmale extends React.Component{
                             </dl>
                             <h5>Wellenlänge eines Signals</h5>
                             <p>Die Wellenlänge <i>λ</i> und die Frequenz <i>F</i> hängen unmittelbar zusammen.
-                            <i>λ</i> ergibt sich aus der Ausbreitungsgeschwindigkeit durch <i>F</i>. Sie liegt in Abhängigkeit zu der relativen Dielektrizitätskonstante. Die Wellenlänge ist in einem Kabel kürzer als in der Luft oder im Vakuum (300.000 km/s / Lichtgeschwindigkeit).</p>
+                            <i>λ</i> ergibt sich aus der Ausbreitungsgeschwindigkeit durch <i>F</i>. Sie liegt in Abhängigkeit zu der relativen Dielektrizitätskonstante <i>ε</i>. <i>λ</i> ist in einem Kabel kürzer als in der Luft oder im Vakuum (<Definition defi="Lichtgeschwindigkeit" >c</Definition>).</p>
 
-                            <p>Je höher die <i>F</i>, desto kürzer <i>λ</i></p>
-                            <p>Je länger die <i>F</i>, desto niedriger <i>λ</i></p>
+                            <p>Je höher <i>F</i>, desto kürzer <i>λ</i></p>
+                            <p>Je länger <i>F</i>, desto niedriger <i>λ</i></p>
 
                             <p>Kurze Wellenlängen haben größere Schwierigkeiten in Gebäude einzudringen und geringere Reichweiten als lange Wellenlängen, sind aber wiederum schneller in ihrer Übertragungsgeschwindigkeit.</p>
-
+                            <p>Bei größeren Distanzen wird meist eine Wellenlänge von 2,4 GHz verwendet. Als Modulationsstandart wird aktuell das <Definition defi="OFDM">OFDM</Definition> Verfahren genutzt.</p>
                         </Article>
                     </Col>
                 </Row>

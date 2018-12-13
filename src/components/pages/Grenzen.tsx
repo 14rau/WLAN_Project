@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Row, Col} from "react-bootstrap";
+import { Article } from '../Article';
+import { Pages } from '../../App';
 
 export class Grenzen extends React.Component{
     public render() {
@@ -24,17 +26,27 @@ export class Grenzen extends React.Component{
                         />
                     </Col>
                     <Col xs={6} style={{paddingTop: "8px"}}>
-                        <div className="customCard">
-                            <p>We like WLAN</p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </div>
-                        <div className="customCard" style={{marginTop: "8px"}}>
-                            <p>We like WLAN</p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        </div>
+                        <Article page={Pages.Grenzen} articleNr={0}>
+                            <h5>Liste von Grenzen</h5>
+                            <ul>
+                                <li>Router ist in der Lage, das WLAN etwa 50 bis 100 Meter weit auszustrahlen (indoor).</li>
+                                <li>Datenrate wird bei weiterer Entfernung schlechter.</li>
+                                <li>Verschiedene Faktoren (Wände, Mikrowellen oder Fernseher) können die Reichweite beeinträchtigen.</li>
+                                <li>Reichweite kann bei verschiedenen Routern variieren</li>
+                                <li>Reichweite kann durch WLAN-Repeater erweitert werden</li>
+                            </ul>
+                            <h5>Nachteile für Repeater-Verfahren wären</h5>
+                            <ul>
+                                <li>Für die Verbindung zwischen Basis und Repeater wird dieselbe Funkverbindung verwendet wie für das eigentliche WLAN</li>
+                                <li>Ausbremsung des gesamten Netzwerkes</li>
+                                <li>Bei Mobilgeräten funktioniert die Übergabe zwischen Basis und Repeater häufig nicht ordentlich</li>
+                                <li>Hat sich ein Android-Gerät einmal mit dem Repeater verbunden, bleibt das meist so, auch wenn es sich mittlerweile in der Nähe der Basis-Station befindet</li>
+                            </ul>
+                        </Article>
                     </Col>
                 </Row>
             </>
+
         )
     }
 }
